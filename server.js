@@ -2,8 +2,8 @@ require('dotenv').config(); // ✅ Charger les variables d’environnement dès 
 
 const express = require('express');
 const cors = require('cors');
-const Product = require('./models/product.js'); // Vérifie que le chemin est bon
-const paymentRoutes = require('./routes/paymentRoutes');
+const Product = require('./src/models/product.js'); // Vérifie que le chemin est bon
+const paymentRoutes = require('./src/routes/paymentRoutes.js');
 const sampleProducts = require('./data/data.json');
 const connectDB = require('./dbconnection/mongodbconnexion.js');
 
